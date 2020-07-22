@@ -37,9 +37,9 @@ jobs:
       - name: Production Build
         run: |
           yarn build
-      - name: Unit Testes
-        run: |
-          yarn test
+      # - name: Unit Testes
+      #   run: |
+      #     yarn test
       - name: Deploy to S3
         uses: prasobkumarkp/s3-sync-action@master
         with:
