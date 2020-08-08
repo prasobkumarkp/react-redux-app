@@ -42,7 +42,7 @@ jobs:
       #   run: |
       #     yarn test
       - name: Deploy to S3
-        uses: prasobkumarkp/s3-sync-action@master
+        uses: ./entrypoint.sh
         with:
           args: --acl public-read --delete
         env:
